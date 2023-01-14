@@ -91,6 +91,7 @@ section p {
     margin-right: 32px;
     border-radius: 50%;
     border: 2px solid;
+    height: 420px;
 }
 
 .social-links img {
