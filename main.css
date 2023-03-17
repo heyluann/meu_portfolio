@@ -45,7 +45,7 @@ header nav li a {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
@@ -59,6 +59,7 @@ section .container {
 
 .brands-list img {
     height: 50px;
+    margin-bottom: 96px;
 }
 
 .brands-list li {
@@ -117,8 +118,8 @@ section p {
 }
 
 .link-gmail {
+    width: 64px;
     height: 24px;
-    margin-left: 100px;
 }
 
 section h3 {
@@ -154,3 +155,56 @@ section h3 {
     margin: 12px;
 }
 
+@media screen and (max-width: 767px) {
+
+    .container {
+        max-width: 90%;
+        display: inline;
+    }
+
+    h1 {
+        font-weight: normal;
+        font-size: 0.9em;
+    }
+
+    header nav li {
+        display: inline;
+        margin-left: 16px;
+        font-size: 14px;
+    }
+    
+    .profile {
+        margin-right: 32px;
+        border-radius: 50%;
+        border: 2px solid;
+        height: 220px;
+        margin-left: 48px;
+    }
+
+    .container-flex {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9em;
+    }
+
+    .projects {
+        display: inline;
+        margin-top: 200px;
+        margin-bottom: 130px;
+    }
+
+    .projects img {
+        
+        width: 120px;
+        height: 170px;
+        border-radius: 24px;
+        margin-left: 24px;
+        margin-top: px;
+        transition: 200ms;
+    }
+
+    #contact {
+        margin-top: 140px;
+    }
+
+}
