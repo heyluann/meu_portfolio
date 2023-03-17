@@ -44,7 +44,8 @@ header nav li a {
     text-decoration: none;
 }
 
-.container {
+.container,
+.container-flex {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
@@ -130,6 +131,7 @@ section h3 {
 .projects {
     margin-top: 128px;
     margin-bottom: 140px;
+    margin-left: 48px;
 }
 
 .projects h3 {
