@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 header,
 section h2,
 section h3,
@@ -20,15 +24,17 @@ body, input, textarea {
     font-family: 'Rubik', sans-serif;
 }
 
-body {
-    --tw-bg-opacity: 1;
-    background-color: rgba(52,53,65,var(--tw-bg-opacity));
-}
 
 header {
-    padding: 16px 0;
-    background-color: #070c1a;
-    color: #ecf0f1;
+    padding: 20px 0;
+    background: url('./imagens/kny.jpg') no-repeat;
+    background-position: center;
+    background-color: black;
+    color: #62cfeb;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 header nav li {
@@ -51,6 +57,24 @@ header nav li a {
     margin: 0 auto;
 }
 
+#about {
+    background: url('./imagens/bakugo.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 125px;
+}
+
+
+.style-about {
+    border: 2px solid #3186be;
+    border-radius: 10px;
+}
+
+.style-about p {
+    padding: 10px;
+    backdrop-filter: blur(50px);
+}
+
 header .container,
 section .container {
     display: flex;
@@ -60,7 +84,7 @@ section .container {
 
 .brands-list img {
     height: 50px;
-    margin-bottom: 96px;
+    margin-bottom: 32px;
 }
 
 .brands-list li {
@@ -73,16 +97,17 @@ section .container {
 }
 
 section {
-    padding: 24px 0;
+    padding: 90px 0;
 }
 
 section h2 {
     margin-bottom: 32px;
     margin-top: 32px;
+    font-size: 4em;
 }
 
 section {
-    color: #e5e6e9;
+    color: #fff;
 }
 
 section p {
@@ -97,30 +122,16 @@ section p {
 }
 
 .social-links img {
-    height: 32px;
+    height: 28px;
 }
 
 .social-links li {
     display: inline;
-    margin-right: 8px;
+    margin: 6px;
 }
 
 .social-links li a {
     text-decoration: none;
-}
-
-#contact .container {
-    display: block;
-}
-
-.contact-methods {
-    display: flex;
-    justify-content: space-between;
-}
-
-.link-gmail {
-    width: 64px;
-    height: 24px;
 }
 
 section h3 {
@@ -128,34 +139,6 @@ section h3 {
     font-size: 24px;
 }
 
-.projects {
-    margin-top: 128px;
-    margin-bottom: 140px;
-    margin-left: 100px;
-}
-
-.projects h3 {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.projects img {
-    width: 190px;
-    height: 240px;
-    border-radius: 24px;
-    margin: 24px;
-    margin-top: 80px;
-    transition: 200ms;
-}
-
-.projects img:hover {
-    width: 210px;
-    height: 260px;
-    transition: 200ms;
-    padding: 0%;
-    margin: 12px;
-}
 
 @media screen and (max-width: 767px) {
 
@@ -174,6 +157,14 @@ section h3 {
         margin-left: 16px;
         font-size: 14px;
     }
+
+    #about {
+        padding-top: 48px;
+        background: url('./imagens/deku-phone.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
     
     .profile {
         margin-right: 32px;
@@ -183,30 +174,24 @@ section h3 {
         margin-left: 48px;
     }
 
+    
     .container-flex {
         display: flex;
         flex-direction: column;
         font-size: 0.9em;
     }
 
-    .projects {
-        display: inline;
-        margin-top: 200px;
-        margin-bottom: 130px;
+    .social-links li {
+        margin: 0;
     }
 
-    .projects img {
-        
-        width: 120px;
-        height: 170px;
-        border-radius: 24px;
-        margin-left: 24px;
-        margin-top: px;
-        transition: 200ms;
+    .social-links img {
+        height: 20px;
     }
 
     #contact {
-        margin-top: 140px;
+        margin-top: 10px;
     }
+
 
 }
