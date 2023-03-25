@@ -62,6 +62,7 @@ header nav li a {
     background-position: center;
     background-size: cover;
     padding-bottom: 125px;
+    background-attachment: fixed;
 }
 
 
