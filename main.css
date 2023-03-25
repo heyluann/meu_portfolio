@@ -160,7 +160,7 @@ section h3 {
 
     #about {
         padding-top: 48px;
-        background: url('./imagens/deku-phone.jpg') no-repeat;
+        background: url('./imagens/deku-phone.jpg');
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
